@@ -1,0 +1,45 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.first_grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 820px;
+  /* the second coulumn holds the container */
+}
+
+#first_canvas_element {
+  height: 840px;
+  /* height: 1fr; */
+}
+
+.first_left {
+  background: rgb(248, 248, 248);
+}
+
+/* #container {
+  height: 800px;
+  width: 1fr;
+} */
+
+canvas {
+  margin: 0;
+  width: 100%; /* this means 100% of the grid element in which it is */
+  height: 800px;
+}
+
+@media screen and (max-width: 700px) {
+  .first_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr;
+    /* the second row holds the container */
+  }
+}
